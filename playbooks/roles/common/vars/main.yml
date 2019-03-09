@@ -39,7 +39,7 @@ streisand_unneeded_packages:
   - lxd
   - snapd
 
-streisand_gateway_location: "/var/www/streisand"
+streisand_gateway_location: "/var/www/homebrand"
 
 streisand_mirror_location: "{{ streisand_gateway_location }}/mirror"
 
@@ -115,7 +115,7 @@ streisand_word_gen:
 # In online documentation, we recommand a URL for people to check
 # their effective IP address.
 
-streisand_my_ip_url: https://duckduckgo.com/?q=ip+address
+streisand_my_ip_url: https://ifconfig.io/
 
 # We used to use Google; it has marginally better usability, but there
 # are reasons not to use it.  If you're reading this, you know enough

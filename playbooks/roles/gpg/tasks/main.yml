@@ -90,7 +90,7 @@
 - name: "Set up a daily cronjob to refresh the Streisand GPG keyring"
   template:
     src: "streisand-gpg-refresh.j2"
-    dest: "/etc/cron.daily/streisand-gpg-refresh"
+    dest: "/etc/cron.daily/homebrand-gpg-refresh"
     owner: root
     group: root
     mode: 0755

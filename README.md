@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/jlund/streisand/master/logo.jpg" alt="Automate the effect"/> 
+  <img src="https://raw.githubusercontent.com/aidanbirky/streisand/master/logo.jpg" alt="Automate the effect"/>
 </p>
 
 - - -
@@ -9,8 +9,9 @@
 [![Build Status](https://travis-ci.org/StreisandEffect/streisand.svg?branch=master)](https://travis-ci.org/StreisandEffect/streisand)
 [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/espadrine.svg?style=social&label=Follow%20%40StreisandVPN)](https://twitter.com/StreisandVPN)
 
-Streisand
+Streisand - Homebrand
 =========
+This fork of Streisand has been stripped of any branding. Code and comments have been sanitized. Small changes for personal convenience
 
 **Silence censorship. Automate the [effect](https://en.wikipedia.org/wiki/Streisand_effect).**
 
@@ -97,7 +98,7 @@ Complete all of these tasks on your local home machine.
 * Make sure an SSH public key is present in ~/.ssh/id\_rsa.pub.
   * SSH keys are a more secure alternative to passwords that allow you to prove your identity to a server or service built on public key cryptography. The public key is something that you can give to others, whereas the private key should be kept secret (like a password).
   * To check if you already have an SSH public key, please enter the following command at a command prompt.
-  
+
         ls ~/.ssh
   * If you see an id_rsa.pub file, then you have an SSH public key.
   * If you do not have an SSH key pair, you can generate one by using this command and following the defaults:

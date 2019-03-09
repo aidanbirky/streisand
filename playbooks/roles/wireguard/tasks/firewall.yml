@@ -19,10 +19,10 @@
 - name: "Add WireGuard firewall persistence service to init"
   template:
     src: streisand-wireguard-service.sh.j2
-    dest: /etc/init.d/streisand-wireguard
+    dest: /etc/init.d/homebrand-wireguard
     mode: 0755
 
-- name: "Enable the streisand-wireguard init service"
+- name: "Enable the homebrand-wireguard init service"
   service:
-    name: streisand-wireguard
+    name: homebrand-wireguard
     enabled: yes

@@ -8,10 +8,10 @@
 - name: "Add IPv4 traffic forwarding persistence service to init"
   copy:
     src: streisand-ipforward.sh
-    dest: /etc/init.d/streisand-ipforward
+    dest: /etc/init.d/homebrand-ipforward
     mode: 0755
 
-- name: "Enable the streisand-ipforward init service"
+- name: "Enable the homebrand-ipforward init service"
   service:
-    name: streisand-ipforward
+    name: homebrand-ipforward
     enabled: yes

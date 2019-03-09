@@ -43,7 +43,7 @@
 - name: Generate the virtual host and restart Nginx if it is updated
   template:
     src: vhost.j2
-    dest: /etc/nginx/sites-available/streisand
+    dest: /etc/nginx/sites-available/homebrand
     owner: root
     group: root
     mode: 0644
@@ -51,8 +51,8 @@
 
 - name: Enable the virtual host
   file:
-    path: /etc/nginx/sites-enabled/streisand
-    src: /etc/nginx/sites-available/streisand
+    path: /etc/nginx/sites-enabled/homebrand
+    src: /etc/nginx/sites-available/homebrand
     state: link
 
   # TODO:
@@ -61,7 +61,7 @@
     - name: Keep a copy of our diagnostics on the server
       copy:
         src: ../../../../streisand-diagnostics.md
-        dest: "{{ streisand_gateway_location }}/streisand-diagnostics.md"
+        dest: "{{ streisand_gateway_location }}/homebrand-diagnostics.md"
 
     # generate the streisand server instructions and documentation
     - include_tasks: docs.yml

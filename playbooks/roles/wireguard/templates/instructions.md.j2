@@ -3,7 +3,7 @@
 WireGuard
 ---------
 
-[WireGuard](https://www.wireguard.com/) is almost certainly the best connection option that Streisand provides. This is due to its [incredible performance](https://www.wireguard.com/performance/), [class-leading cryptography](https://www.wireguard.com/protocol/), and many, many other benefits.
+[WireGuard](https://www.wireguard.com/) is almost certainly the best connection option that Homebrand provides. This is due to its [incredible performance](https://www.wireguard.com/performance/), [class-leading cryptography](https://www.wireguard.com/protocol/), and many, many other benefits.
 
 WireGuard is available on Linux, and [cross-platform](https://www.wireguard.com/xplatform/) and portable userspace implementations can be downloaded for Android and macOS.
 
@@ -28,7 +28,7 @@ An [experimental configuration for OpenWrt/LEDE](#openwrt) 17.01.4 (or later) is
 {% endfor %}
 1. Enter a name for the tunnel and tap *Create Tunnel* to save the configuration.
 1. Tap the switch next to the tunnel's name to enable the VPN. If this is your first time using WireGuard on your Android device, you will be prompted to accept the VPN connection request.
-1. You should be good to go! You can verify that your traffic is being routed properly by [looking up your IP address on DuckDuckGo]({{ streisand_my_ip_url }}). It should say *Your public IP address is {{ streisand_ipv4_address }}*.
+1. You should be good to go! You can verify that your traffic is being routed properly by [looking up your IP address here]({{ streisand_my_ip_url }}). It should say *Your public IP address is {{ streisand_ipv4_address }}*.
 
 ---
 
@@ -43,7 +43,7 @@ An [experimental configuration for OpenWrt/LEDE](#openwrt) 17.01.4 (or later) is
 {% endfor %}
 1. Enter a name for the tunnel and tap *Create Tunnel* to save the configuration.
 1. Tap the switch next to the tunnel's name to enable the VPN. If this is your first time using WireGuard on your iOS device, you will be prompted to accept the VPN connection request.
-1. You should be good to go! You can verify that your traffic is being routed properly by [looking up your IP address on DuckDuckGo]({{ streisand_my_ip_url }}). It should say *Your public IP address is {{ streisand_ipv4_address }}*.
+1. You should be good to go! You can verify that your traffic is being routed properly by [looking up your IP address here]({{ streisand_my_ip_url }}). It should say *Your public IP address is {{ streisand_ipv4_address }}*.
 
 ---
 
@@ -70,7 +70,7 @@ An [experimental configuration for OpenWrt/LEDE](#openwrt) 17.01.4 (or later) is
 
    'sudo systemctl enable wg-quick@{{ vpn_client_names.results[0].stdout }}.service'
 
-1. You should be good to go! You can verify that your traffic is being routed properly by [looking up your IP address on DuckDuckGo]({{ streisand_my_ip_url }}). It should say *Your public IP address is {{ streisand_ipv4_address }}*.
+1. You should be good to go! You can verify that your traffic is being routed properly by [looking up your IP address here]({{ streisand_my_ip_url }}). It should say *Your public IP address is {{ streisand_ipv4_address }}*.
 1. To stop routing your traffic through WireGuard, simply bring the interface back down:
 
    `sudo wg-quick down {{ vpn_client_names.results[0].stdout }}`
@@ -102,7 +102,7 @@ Each client configuration profile includes a `DNS` command that uses resolvconf 
    `sudo wg-quick up {{ vpn_client_names.results[0].stdout }}`
 
 
-1. You should be good to go! You can verify that your traffic is being routed properly by [looking up your IP address on DuckDuckGo]({{ streisand_my_ip_url }}). It should say *Your public IP address is {{ streisand_ipv4_address }}*.
+1. You should be good to go! You can verify that your traffic is being routed properly by [looking up your IP address here]({{ streisand_my_ip_url }}). It should say *Your public IP address is {{ streisand_ipv4_address }}*.
 1. You can check the vpn status at any time using `wg`:
    `sudo wg show`
 
@@ -146,7 +146,7 @@ The next time the router reboots, the script will be run. It removes itself auto
 * The interface is added to the *WAN* network zone
 * The default route to the Internet is set to the interface. (This will break WAN connectivity, so be sure to install only from WiFi/LAN.)
 * The WireGuard keepalive is set to 25 seconds
-* System-wide DNS is forced to point at the Streisand server
+* System-wide DNS is forced to point at the Homebrand server
 
 If you don't like the DNS default, you can change DNS behavior on the *Network:DHCP and DNS* LuCI page. Put the DNS server address in *DNS forwardings*. On the *Resolv and Hosts Files* tab, leave *Ignore resolve file* checked, unless you want to use your upstream DNS. (You probably don't.)
 

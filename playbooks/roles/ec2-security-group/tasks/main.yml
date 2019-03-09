@@ -2,7 +2,7 @@
 - name: Create the EC2 security group
   ec2_group:
     name: "{{ aws_security_group }}"
-    description: Security group for Streisand
+    description: Security group for Homebrand
     region: "{{ aws_region }}"
     vpc_id: "{{ aws_vpc_id | default(omit) }}"
     aws_access_key: "{{ aws_access_key }}"
@@ -15,7 +15,7 @@
 - name: Open necessary ports across supported services in the EC2 security group
   ec2_group:
     name: "{{ aws_security_group }}"
-    description: Security group for Streisand
+    description: Security group for Homebrand
     region: "{{ aws_region }}"
     vpc_id: "{{ aws_vpc_id | default(omit) }}"
     aws_access_key: "{{ aws_access_key }}"
@@ -50,7 +50,7 @@
 - name: Open the OpenConnect ports in the EC2 security group
   ec2_group:
     name: "{{ aws_security_group }}"
-    description: Security group for Streisand
+    description: Security group for Homebrand
     region: "{{ aws_region }}"
     vpc_id: "{{ aws_vpc_id | default(omit) }}"
     aws_access_key: "{{ aws_access_key }}"
@@ -77,7 +77,7 @@
 - name: Open the OpenVPN ports in the EC2 security group
   ec2_group:
     name: "{{ aws_security_group }}"
-    description: Security group for Streisand
+    description: Security group for Homebrand
     region: "{{ aws_region }}"
     vpc_id: "{{ aws_vpc_id | default(omit) }}"
     aws_access_key: "{{ aws_access_key }}"
@@ -104,7 +104,7 @@
 - name: Open the stunnel port in the EC2 security group
   ec2_group:
     name: "{{ aws_security_group }}"
-    description: Security group for Streisand
+    description: Security group for Homebrand
     region: "{{ aws_region }}"
     vpc_id: "{{ aws_vpc_id | default(omit) }}"
     aws_access_key: "{{ aws_access_key }}"
@@ -125,7 +125,7 @@
 - name: Open the Shadowsocks ports in the EC2 security group
   ec2_group:
     name: "{{ aws_security_group }}"
-    description: Security group for Streisand
+    description: Security group for Homebrand
     region: "{{ aws_region }}"
     vpc_id: "{{ aws_vpc_id | default(omit) }}"
     aws_access_key: "{{ aws_access_key }}"
@@ -152,7 +152,7 @@
 - name: Open the Tor ports in the EC2 security group
   ec2_group:
     name: "{{ aws_security_group }}"
-    description: Security group for Streisand
+    description: Security group for Homebrand
     region: "{{ aws_region }}"
     vpc_id: "{{ aws_vpc_id | default(omit) }}"
     aws_access_key: "{{ aws_access_key }}"
@@ -179,7 +179,7 @@
 - name: Open the WireGuard ports in the EC2 security group
   ec2_group:
     name: "{{ aws_security_group }}"
-    description: Security group for Streisand
+    description: Security group for Homebrand
     region: "{{ aws_region }}"
     vpc_id: "{{ aws_vpc_id | default(omit) }}"
     aws_access_key: "{{ aws_access_key }}"

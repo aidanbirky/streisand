@@ -1,8 +1,8 @@
 ---
-stunnel_cert_country:  "GB"
-stunnel_cert_province: "Berkshire"
-stunnel_cert_city: "Slough"
-stunnel_cert_org: "Wernham Hogg Paper Company"
-stunnel_cert_ou: "Gareth Keenan Investigations"
+stunnel_cert_country:  "XX"
+stunnel_cert_province: "Nope"
+stunnel_cert_city: "Nope"
+stunnel_cert_org: "Nope"
+stunnel_cert_ou: "Nope"
 
 stunnel_key_size: "3072"
