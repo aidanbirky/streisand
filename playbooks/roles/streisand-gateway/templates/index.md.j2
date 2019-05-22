@@ -8,6 +8,9 @@ Connection Instructions
 
 There are multiple ways to bypass censorship, and Homebrand provides several choices and different protocols in the event that any of them are restricted.
 
+{% if streisand_wireguard_enabled %}
+* [WireGuard (recommended)](/wireguard/)
+{% endif %}
 {% if streisand_openconnect_enabled %}
 * [OpenConnect / Cisco AnyConnect](/openconnect/)
 {% endif %}
@@ -25,9 +28,6 @@ There are multiple ways to bypass censorship, and Homebrand provides several cho
 {% endif %}
 {% if streisand_tor_enabled %}
 * [Tor](/tor/)
-{% endif %}
-{% if streisand_wireguard_enabled %}
-* [WireGuard](/wireguard/)
 {% endif %}
 
 {% if streisand_mirrored_clients %}
